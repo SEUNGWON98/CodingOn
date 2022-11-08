@@ -1,0 +1,143 @@
+*/*{
+    color: blanchedalmond;
+}
+
+li{
+    color: red;
+}
+
+#tomato{
+    color: tomato;
+}
+
+.orange{
+    color: orange;
+}
+
+div.orange{
+    background-color: red;
+}
+*/
+
+ul,
+p,
+.orange {
+    color: blue;
+}
+
+/*복합  형제 선택자
+- 하위: A   B
+- 자식: A > B
+- 인접형제: A + B
+- 일반형제: A ~ B
+*/
+
+body .orange{
+    color: orange;
+}
+
+ul > .orange {
+    color: red;
+}
+
+/*
+    인접 형제 선택자
+    A + B
+    조건1. A, B 같은 레벨
+    조건2. B가 A의 바로 뒤에
+*/
+
+ul + .orannge {
+    color: green;
+}
+
+/*
+    일반 형제 선택자
+    A ~ B
+    조건1. A, B 같은 레벨
+    조건2. B는 A보다 뒤에 위치
+*/
+
+/* 
+    가상선택자
+    E:hover: E요소에 마우스가 올라가 있는 동안
+    E:active: E 요소에 마우스를 클릭하는 동안
+    E:visited E 요소가 링크일 때, 한 번 클릭해서 링크를 접속한 이력이 있을 떼
+*/
+
+/*
+div.orange ~ span {
+    color: aqua;
+}
+
+#google:hover {
+    font-weight: 700;
+    color: orangered;
+}
+
+#naver:active {
+    font-weight: 700;
+    color: palegoldenrod;
+}
+
+#daum:visited {
+    color: gray;
+}
+
+.fruits span:first-child {
+    color: red;
+}
+
+.fruits h3:last-child {
+    color: blue;
+}
+
+.fruits *:nth-child(n) {
+    color: green;
+}
+*/
+
+.fruits *:not(span){
+    color: blue;
+}
+
+/*
+.numbers span:nth-child(odd) {
+    color: green;
+}
+
+.numbers span:nth-child(even) {
+    color: red;
+}
+*/
+
+.numbers span:nth-child(3n+4) {
+    color: pink;
+}
+
+/*
+    css우선순위
+    !important > 인라인 스타일 > 아이디 선택자 >
+    클래스/속성/가상 선택자 > 태그 선택자 > 전체 선택자
+    important는 지양
+*/
+
+.test *{
+    color : gray;
+}
+
+.test span {
+    color: blue !important;
+}
+
+.test .num{
+    color: red;
+}
+
+.test #two{
+    color: purple;
+}
+
+.test #color{
+    color: black;
+}

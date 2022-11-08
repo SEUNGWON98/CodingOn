@@ -1,0 +1,17 @@
+.long_Text {
+    position: fixed;
+
+    animation-name: move;
+    animation-duration: 3s;
+}
+@keyframes move {
+    from {
+        width: 3000px;
+        left: 100%;
+    }
+
+    to {
+        left: 0px;
+        width: 100%;
+    }
+}

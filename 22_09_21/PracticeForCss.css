@@ -1,0 +1,40 @@
+div{
+    width: 300px;
+    color: blueviolet;
+    background-color: gray;
+    background: linear-gradient(to right top, red, purple);
+    font-size: 50px;
+    font-weight: 1000;
+    /*웹 폰트*/
+    /*모든 사용자가 동일한 폰트로 화면을 볼 수 있음
+    다운로드가 아니라 링크코드를 따와 html에 link로 불러온다. 
+    보통은 body태그에 적용*/
+
+    font-style: italic;
+
+    border-style:inset;
+    border-width: 10px;
+    border-color: green;
+    /*보더 속성 한번에 바꾸기*/
+    border-top: 10px solid red;
+    /*박스 모델*/
+    box-sizing: border-box;
+    margin: 50px;
+    padding-top: 50px;
+    padding-right: 500px;
+}
+span{
+    animation: box-ani 1s linear forwards;
+}
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+p{
+    font-size: 60px;
+    font-weight: 800;
+    box-shadow: 10px 10px 10px red;
+    border: 1px solid black;
+    text-shadow: 4px 3px 7px blue;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습</title>
+
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>실습30</h1>
+    <form action="" name="register">
+      <input type="text" name="id" id="id" />
+      <br />
+      <input type="password" name="password" id="password" />
+      <br />
+
+      <button type="button" onclick="seoPost();">로그인</button>
+      <div class="result"></div>
+    </form>
+  </body>
+  <script>
+    let result = document.querySelector(".result");
+    function seoPost() {
+      console.log("############## click axiosPOST ########");
+
+      const form = document.forms["register"];
+      const data = {
+        id: form.id.value,
+        password: form.password.value,
+      };
+
+      axios({
+        method: "POST",
+        url: "/axios2",
+        data: data, // POST 요청은 "data"에 정보를 실어서 보내야 됨
+      }).then(function (response) {
+        console.log(response);
+        console.log(response.data);
+        result.textContent = response.data.txt;
+        result.style.color = response.data.color;
+      });
+    }
+  </script>
+</html>

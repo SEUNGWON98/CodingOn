@@ -1,0 +1,66 @@
+.worm{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.eyes {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.black {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+
+.grass {
+    position: relative;
+    bottom: 200px;
+}
+
+.first{
+    left: 100px;
+    top: 100px;
+}
+
+.second{
+    background-color: orange;
+    left: 150px;
+    top: 60px;
+}
+
+.third {
+    background-color: yellow;
+    left: 200px;
+    top: 25px;
+}
+
+.fourth {
+    background-color: green;
+    
+    left: 250px;
+    top: -30px;
+}
+
+.fifth {
+    background-color: blue;
+    left: 300px;
+    top: -110px;
+    z-index: 5;
+}

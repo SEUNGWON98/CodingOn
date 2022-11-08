@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN Link (css) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./index2.css">
+
+</head>
+<body>
+    <h1>bootstrap Utility</h1>
+
+    <!-- background color -->
+    <!-- p-3: padding 3 -->
+    <!-- mb-3: margin-bottom 3 -->
+    <!-- text-white: color white -->
+    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+<div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+<div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+<div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+<div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+<div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+<div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+<div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+
+<!-- color border -->
+<span class="border border-primary border-top-0">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-secondary">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-success border-bottom">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-danger">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-warning">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-info">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-light">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-dark">ㅋㅎㅋㅎㅋㅎ</span>
+<span class="border border-white">ㅋㅎㅋㅎㅋㅎ</span>
+
+<div class="mb-4">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control border-success border-danger" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <hr>
+  <!-- spacing (margin, padding) -->
+  <div class="mb-5 text-bg danger text-center">box1</div>
+  <div class="ms-3 text-bg-primary text-center">box2</div>
+
+  <br>
+  <br>
+  <!-- 
+    display: inline
+    컨텐츠만큼 너비 차지, 줄바꿈 x
+   -->
+  <div class="d-inline p-2 text-bg-primary">d-inline</div>
+<div class="d-inline p-2 text-bg-dark">d-inline</div><br><br>
+
+<!-- display: block
+    전체 너비 차지, 줄바꿈
+ -->
+
+ <!-- w-{size}: width: size(0, 25, 50, 75, 700);
+      h-{size}: height: size(0, 25, 50, 75, 700);
+ -->
+<span class="d-inline-block p-2 text-bg-primary w-50">d-block</span>
+<span class="d-inline-block p-2 text-bg-dark">d-block</span>
+
+<!-- display: none;
+    화면에서 사라지게 함
+-->
+<span class="d-none d-inline-block p-2 text-bg-dark">d-block</span>
+
+<!-- display: flex; -->
+<!-- 부모 요소에 flex -> 자식 요소 inline-block -->
+<!-- justify-content-center -> align-items: center; -->
+<div class="parent border border-info d-flex justify-content-center align-items-center" style="height: 300px;">
+    <div class="child text-bg-danger textCenter" style="width: 100px; height: 100px;">child</div>
+    <div class="child text-bg-primary textCenter" style="width: 100px; height: 100px;">child</div>
+    <div class="child text-bg-warning textCenter" style="width: 100px; height: 100px;">child</div>
+</div>
+    
+    <!-- CDN Link(js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

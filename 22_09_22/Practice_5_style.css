@@ -1,0 +1,39 @@
+.beach1{
+    width: 400px;
+    height: 200px;
+
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+img:hover {
+
+    /*transition:
+        css 프로퍼티(속성)이 변화할 때
+        일정시간동안 변화가 일어나도록
+    */
+
+    transition: trasform 1s;
+
+    /*
+    transform: skewX(30deg);
+    transform: skewY(30deg);
+
+    transform: skew(30deg, 30deg);
+    
+    transform: scale(2, 1);
+    */
+
+
+    /*rotate(): 각도만큼 회전
+        transform: rotate(45deg)
+    */
+
+    transform: translateX(100px);
+}

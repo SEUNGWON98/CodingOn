@@ -1,0 +1,63 @@
+*/*{
+    color: blanchedalmond;
+}
+
+li{
+    color: red;
+}
+
+#tomato{
+    color: tomato;
+}
+
+.orange{
+    color: orange;
+}
+
+div.orange{
+    background-color: red;
+}
+*/
+
+ul,
+p,
+.orange {
+    color: blue;
+}
+
+/*복합  형제 선택자
+- 하위: A   B
+- 자식: A > B
+- 인접형제: A + B
+- 일반형제: A ~ B
+*/
+
+body .orange{
+    color: orange;
+}
+
+ul > .orange {
+    color: red;
+}
+
+/*
+    인접 형제 선택자
+    A + B
+    조건1. A, B 같은 레벨
+    조건2. B가 A의 바로 뒤에
+*/
+
+ul + .orannge {
+    color: green;
+}
+
+/*
+    일반 형제 선택자
+    A ~ B
+    조건1. A, B 같은 레벨
+    조건2. B는 A보다 뒤에 위치
+*/
+
+div.orange ~ span {
+    color: aqua;
+}
