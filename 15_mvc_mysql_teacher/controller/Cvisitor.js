@@ -1,7 +1,7 @@
-const Visitor = require("../model/Visitor");
+const Visitor = require('../model/Visitor');
 
 exports.main = (req, res) => {
-  res.render("index");
+  res.render('index');
 };
 
 exports.getVisitors = (req, res) => {
@@ -11,17 +11,27 @@ exports.getVisitors = (req, res) => {
 
   // after
   Visitor.getVisitors((result) => {
-    console.log("Cvisitor.js", result); // [ {}, {}, {}, {} ]
-    res.render("visitor", { data: result });
+    console.log('Cvisitor.js', result); // [ {}, {}, {}, {} ]
+    res.render('visitor', { data: result });
+  });
+};
+
+exports.getVisitor = (req, res) => {
+  console.log(req.query); // { id: '1' }
+  console.log(req.query.id); // '1'
+
+  Visitor.getVisitor(req.query.id, (result) => {
+    console.log('Cvisitor.js', result);
+    res.send(result);
   });
 };
 
 exports.postVisitor = (req, res) => {
-  console.log("postvisitor: ", req.body);
+  console.log('postvisitor: ', req.body);
   // postvisitor:  { name: '빅파이', comment: '맛있다' }
 
   Visitor.postVisitor(req.body, (result) => {
-    console.log("Cvisitor.js", result); // Cvisitor.js 10
+    console.log('Cvisitor.js', result); // Cvisitor.js 10
     res.send({
       id: result, // pk(id) -> 10
       name: req.body.name, // 폼에 입력한 name
@@ -30,12 +40,21 @@ exports.postVisitor = (req, res) => {
   });
 };
 
+exports.patchVisitor = (req, res) => {
+  console.log(req.body);
+
+  Visitor.patchVisitor(req.body, (result) => {
+    console.log('Cvisitor.js:', result);
+    res.send('수정 성공!!!');
+  });
+};
+
 exports.deleteVisitor = (req, res) => {
   console.log(req.body); // { id: '1' }
   console.log(req.body.id); // 1
 
   Visitor.deleteVisitor(req.body.id, (result) => {
-    console.log("Cvisitor.js: ", result);
-    res.send("삭제 성공!!!");
+    console.log('Cvisitor.js: ', result);
+    res.send('삭제 성공!!!');
   });
 };

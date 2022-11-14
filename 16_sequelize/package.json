@@ -1,5 +1,5 @@
 {
-  "name": "15_mvc_mysql",
+  "name": "16_sequelize",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
