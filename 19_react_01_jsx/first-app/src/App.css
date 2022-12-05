@@ -159,3 +159,9 @@
   position: relative;
   background-color: black;
 }
+
+.frame {
+  background-color: beige;
+  width: 400px;
+  height: 400px;
+}
