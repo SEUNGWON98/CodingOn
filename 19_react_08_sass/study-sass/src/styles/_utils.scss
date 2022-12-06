@@ -1,0 +1,33 @@
+$color-red: red; // 변수를 만들때 $를 사용
+$color-orange: orange;
+$color-yellow: yellow;
+$color-green: green;
+$color-blue: rgb(58, 58, 242);
+$color-indigo: indigo;
+$color-purple: purple;
+$color-black: black;
+$color-white: white;
+$color-pink: pink;
+$color-skyblue: skyblue;
+
+// SIZE
+$box-size: 150px;
+
+// ANIMATION
+$animation-duration: 0.4s;
+
+// BREAKPOINT
+$breakpoint-md: 768px;
+
+// 함수형도 가능!!!
+@mixin box($w, $h) {
+  width: $w;
+  height: $h;
+  border: 2px solid $color-black;
+}
+
+@mixin circle($w, $h) {
+  width: $w;
+  height: $h;
+  border-radius: 50%;
+}

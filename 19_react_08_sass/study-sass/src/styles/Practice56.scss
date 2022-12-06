@@ -1,0 +1,52 @@
+@import "./utils.scss";
+
+.Practice56 {
+  .circle {
+    @include circle(100px, 100px);
+
+    &.red {
+      background-color: $color-red;
+      z-index: 0;
+      margin: 0 0 0 100px;
+      display: flex;
+      align-items: center;
+    }
+
+    &.orange {
+      background-color: $color-orange;
+      z-index: 1;
+      margin: -30px 0 0 140px;
+    }
+    &.yellow {
+      background-color: $color-yellow;
+      z-index: 2;
+      margin: -40px 0 0 200px;
+    }
+    &.green {
+      background-color: $color-green;
+      z-index: 3;
+      margin: -40px 0 0 250px;
+    }
+    &.blue {
+      background-color: $color-blue;
+      z-index: 4;
+      margin: -60px 0 0 300px;
+    }
+  }
+
+  .eye1 {
+    width: 50px;
+    height: 50px;
+    background-color: $color-white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .eye2 {
+    width: 20px;
+    height: 20px;
+    background-color: $color-black;
+    border-radius: 50%;
+  }
+}

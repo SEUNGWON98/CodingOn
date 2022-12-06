@@ -1,11 +1,11 @@
-const PostItem = (props) => {
+const Practice58Item = (props) => {
   // props
   // post => {id: x, title: xxx, body: xxx}
   const { post } = props;
   console.log(props);
 
   return (
-    <div className="PostItem">
+    <div className="Practice58Item">
       <div>
         <span className="id">No. {post.id}</span>
         <span className="title">- {post.title}</span>
@@ -15,4 +15,4 @@ const PostItem = (props) => {
   );
 };
 
-export default PostItem;
+export default Practice58Item;
